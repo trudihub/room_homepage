@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Spartan", sans-serif;
+}
+
+nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 12px;
+  width: 30%;
+  top: 40px;
+  left: 60px;
+}
+
+nav .navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 300px;
+}
+
+nav .hamburgerMenu {
+  display: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.grid-container {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 530px 1fr;
+      grid-template-rows: 530px 1fr;
+  -ms-grid-columns: 1fr 1.5fr 1fr;
+      grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+.slides {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow: scroll;
+  width: 100%;
+}
+
+.slides .slideItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: width 0.1s ease-in;
+  transition: width 0.1s ease-in;
+}
+
+.slides .slideItem .heroImage {
+  height: 530px;
+  width: 840px;
+  background-size: cover;
+}
+
+.slides .slideItem .slideText {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slides .slideItem .slideText h1 {
+  width: 70%;
+}
+
+.slides .slideItem .slideText p {
+  width: 70%;
+  margin: 15px auto;
+  line-height: 1.5;
+  font-size: 12px;
+  color: #a1a1a1;
+}
+
+.slides .slideItem .slideText h5 {
+  margin-left: 15%;
+  margin-right: auto;
+  letter-spacing: 4px;
+  font-weight: normal;
+}
+
+#heroImage1 {
+  background: url("./images/desktop-image-hero-1.jpg");
+}
+
+#heroImage2 {
+  background: url("./images/desktop-image-hero-2.jpg");
+}
+
+#heroImage3 {
+  background: url("./images/desktop-image-hero-3.jpg");
+}
+
+.about {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .aboutText {
+  width: 90%;
+}
+
+.about .aboutText p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 15px;
+  color: #a1a1a1;
+}
+
+.arrowContainer {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: black;
+  width: 160px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+}
+
+.arrowContainer div {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.arrowContainer div:hover {
+  background: #454545;
+}
+/*# sourceMappingURL=style.css.map */
